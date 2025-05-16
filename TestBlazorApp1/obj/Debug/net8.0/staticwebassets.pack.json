@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TestBlazorApp1.bundle.scp.css",
+      "PackagePath": "staticwebassets\\TestBlazorApp1.cw9u596927.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\wwwroot\\bootstrap\\bootstrap-icons.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap-icons.css"
+    },
+    {
+      "Id": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.TestBlazorApp1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.TestBlazorApp1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.TestBlazorApp1.props",
+      "PackagePath": "build\\TestBlazorApp1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.TestBlazorApp1.props",
+      "PackagePath": "buildMultiTargeting\\TestBlazorApp1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.TestBlazorApp1.props",
+      "PackagePath": "buildTransitive\\TestBlazorApp1.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

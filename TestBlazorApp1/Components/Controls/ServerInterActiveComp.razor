@@ -1,0 +1,23 @@
+﻿@rendermode InteractiveServer
+
+<h3>ServerInteravtive</h3>
+@* style="color:@(serverDetails.IsOnline?"red":"green")" *@
+
+@if (serverDetails != null)
+{
+
+    <p data-name="@serverDetails.Name" data-status="@(serverDetails.IsOnline?"Online":"Offline")" style="@($"color:{(serverDetails.IsOnline?"green":"red")}")">
+        @serverDetails.Name is @serverDetails.City that is
+        @(serverDetails.IsOnline ? "Online" : "Offline")
+    </p>
+    <button type="button" class="@(serverDetails.IsOnline?"btn btn-danger":"btn btn-success")" @onclick="ChangeServerStatus1">Turn @(serverDetails.IsOnline ? "Off" : "On")</button>
+}
+
+@code {
+    private ServerDetails? serverDetails = new ServerDetails() { Name = "Server 1", City = "Hyderabad" };
+    public void ChangeServerStatus1()
+    {
+        if (serverDetails != null)
+            this.serverDetails.IsOnline = !serverDetails.IsOnline;
+    }
+}

@@ -1,0 +1,110 @@
+﻿@page "/Server/{Op}/{Id:int?}"
+@inject NavigationManager NavigationManager
+
+<h3>Server</h3>
+<br />
+
+@if (server != null)
+{
+    <EditForm Model="server" FormName="formServer" OnValidSubmit="Submit">
+
+        <DataAnnotationsValidator></DataAnnotationsValidator>
+        @* <ValidationSummary></ValidationSummary> *@
+
+        <InputNumber @bind-Value="server.ServerId" hidden></InputNumber>
+        <div class="row mb-3">
+            <div class="col-2">
+                <label class="col-form-label">Name</label>
+            </div>
+            <div class="col-6">
+                <InputText @bind-Value="server.Name" class="form-control"></InputText>
+            </div>
+            <div class="col">
+                <ValidationMessage For="() => server.Name"></ValidationMessage>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-2">
+                <label class="col-form-label">City</label>
+            </div>
+            <div class="col-6">
+                <InputText @bind-Value="server.City" class="form-control"></InputText>
+            </div>
+            <div class="col">
+                <ValidationMessage For="() => server.City"></ValidationMessage>
+            </div>
+        </div>
+        @if (enumOperation != OperationEnum.Add)
+        {
+            <div class="row mb-3">
+                <div class="col-2">
+                    <label class="col-form-label">Online</label>
+                </div>
+                <div class="col-6">
+                    <InputCheckbox @bind-Value="server.IsOnline" class="form-check-input"></InputCheckbox>
+                </div>
+            </div>
+        }
+        <br />
+        <button class="btn btn-primary" type="submit">@(enumOperation == OperationEnum.Edit ? "Update" : "Save")</button>
+        <a href="/MainServer" class="btn btn-primary"> Close</a>
+
+    </EditForm>
+}
+else
+{
+    <p> Server not found.</p>
+    <a href="/MainServer" class="btn btn-primary"> Close</a>
+}
+
+@code {
+    #region QueryParams
+    [Parameter]
+    public int Id { set; get; }
+    [Parameter]
+    public string? Op { set; get; }
+    #endregion
+
+    #region Properties
+    [SupplyParameterFromForm]
+    private ServerDetails? server { get; set; }
+    private OperationEnum enumOperation { set; get; }
+    #endregion
+
+    #region Default
+    protected override void OnParametersSet()
+    {
+        if (Enum.TryParse(typeof(OperationEnum), Op, out object result))
+        {
+            enumOperation = (OperationEnum)result;
+            switch (enumOperation)
+            {
+                case OperationEnum.Edit:
+                    server ??= ServerDetailssRepository.GetServerDetailsById(this.Id);
+                    break;
+                case OperationEnum.Add:
+                    server ??= new ServerDetails() { IsOnline = false };
+                    break;
+            }
+        }
+    }
+    #endregion
+
+    private void Submit()
+    {
+        if (server != null)
+        {
+            switch (enumOperation)
+            {
+                case OperationEnum.Edit:
+                    ServerDetailssRepository.UpdateServerDetails(server.ServerId, server);
+                    break;
+                case OperationEnum.Add:
+                    ServerDetailssRepository.AddServerDetails(server);
+                    break;
+            }
+            NavigationManager.NavigateTo("/MainServer");
+        }
+    }
+}

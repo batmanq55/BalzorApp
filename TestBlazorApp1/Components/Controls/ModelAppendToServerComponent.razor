@@ -1,0 +1,31 @@
+﻿<h3>ModelAppendToServerComponent</h3>
+@* style="color:@(serverDetails.IsOnline?"red":"green")" *@
+
+@if (serverDetails != null)
+{
+    <EditForm Enhance="true" Model="serverDetails" FormName="ServerComponentFrom" OnSubmit="ChangeServerStatus">
+
+        @* <InputNumber @bind-Value="serverDetails.ServerId" hidden></InputNumber>
+        <InputText @bind-Value="serverDetails.Name" hidden></InputText>
+        <InputText @bind-Value="serverDetails.City" hidden></InputText>
+        <InputCheckbox @bind-Value="serverDetails.IsOnline" hidden></InputCheckbox> *@
+
+        <p data-name="@serverDetails.Name" data-status="@(serverDetails.IsOnline?"Online":"Offline")" style="@($"color:{(serverDetails.IsOnline?"green":"red")}")">
+            @serverDetails.Name is @serverDetails.City that is
+            @(serverDetails.IsOnline ? "Online" : "Offline")
+        </p>
+        <button type="submit" class="@(serverDetails.IsOnline?"btn btn-danger":"btn btn-success")">Turn @(serverDetails.IsOnline ? "Off" : "On")</button>
+    </EditForm>
+}
+
+@code {
+    [SupplyParameterFromForm]
+    private ServerDetails? serverDetails { get; set; }
+    protected override void OnParametersSet() => serverDetails ??= new ServerDetails() { Name = "Server 1", City = "Hyderabad" };
+
+    public void ChangeServerStatus()
+    {
+        if (serverDetails != null)
+            this.serverDetails.IsOnline = !serverDetails.IsOnline;
+    }
+}
