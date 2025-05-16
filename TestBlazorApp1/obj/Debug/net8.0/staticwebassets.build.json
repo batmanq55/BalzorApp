@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nhew/XxbVD+cGpjxQ0u0e/ZQYXcyoVMm2i3XG2xlVJk=",
+  "Hash": "7BQVH2RVT9ycBU2atroiabYlPqerAN9Gn0OGKf55Q30=",
   "Source": "TestBlazorApp1",
   "BasePath": "_content/TestBlazorApp1",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "TestBlazorApp1\\wwwroot",
       "Source": "TestBlazorApp1",
-      "ContentRoot": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\wwwroot\\",
+      "ContentRoot": "E:\\Satish\\GitHubRepo_My\\TestBlazorApp1\\wwwroot\\",
       "BasePath": "_content/TestBlazorApp1",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TestBlazorApp1.styles.css",
+      "Identity": "E:\\Satish\\GitHubRepo_My\\TestBlazorApp1\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TestBlazorApp1.styles.css",
       "SourceId": "TestBlazorApp1",
       "SourceType": "Computed",
-      "ContentRoot": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "E:\\Satish\\GitHubRepo_My\\TestBlazorApp1\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/TestBlazorApp1",
       "RelativePath": "TestBlazorApp1#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
@@ -35,13 +35,13 @@
       "Integrity": "nBbuB4QBgZhRsCaYuICutJV6tw3ysUgNUnjTvO+DKsY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TestBlazorApp1.styles.css"
+      "OriginalItemSpec": "E:\\Satish\\GitHubRepo_My\\TestBlazorApp1\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TestBlazorApp1.styles.css"
     },
     {
-      "Identity": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TestBlazorApp1.bundle.scp.css",
+      "Identity": "E:\\Satish\\GitHubRepo_My\\TestBlazorApp1\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TestBlazorApp1.bundle.scp.css",
       "SourceId": "TestBlazorApp1",
       "SourceType": "Computed",
-      "ContentRoot": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "E:\\Satish\\GitHubRepo_My\\TestBlazorApp1\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/TestBlazorApp1",
       "RelativePath": "TestBlazorApp1#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
@@ -56,13 +56,13 @@
       "Integrity": "nBbuB4QBgZhRsCaYuICutJV6tw3ysUgNUnjTvO+DKsY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TestBlazorApp1.bundle.scp.css"
+      "OriginalItemSpec": "E:\\Satish\\GitHubRepo_My\\TestBlazorApp1\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TestBlazorApp1.bundle.scp.css"
     },
     {
-      "Identity": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\wwwroot\\app.css",
+      "Identity": "E:\\Satish\\GitHubRepo_My\\TestBlazorApp1\\wwwroot\\app.css",
       "SourceId": "TestBlazorApp1",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\wwwroot\\",
+      "ContentRoot": "E:\\Satish\\GitHubRepo_My\\TestBlazorApp1\\wwwroot\\",
       "BasePath": "_content/TestBlazorApp1",
       "RelativePath": "app#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -80,10 +80,10 @@
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Identity": "E:\\Satish\\GitHubRepo_My\\TestBlazorApp1\\wwwroot\\bootstrap\\bootstrap.min.css",
       "SourceId": "TestBlazorApp1",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\wwwroot\\",
+      "ContentRoot": "E:\\Satish\\GitHubRepo_My\\TestBlazorApp1\\wwwroot\\",
       "BasePath": "_content/TestBlazorApp1",
       "RelativePath": "bootstrap/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -101,10 +101,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "E:\\Satish\\GitHubRepo_My\\TestBlazorApp1\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "TestBlazorApp1",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\wwwroot\\",
+      "ContentRoot": "E:\\Satish\\GitHubRepo_My\\TestBlazorApp1\\wwwroot\\",
       "BasePath": "_content/TestBlazorApp1",
       "RelativePath": "bootstrap/bootstrap.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -122,10 +122,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\wwwroot\\bootstrap\\bootstrap-icons.css",
+      "Identity": "E:\\Satish\\GitHubRepo_My\\TestBlazorApp1\\wwwroot\\bootstrap\\bootstrap-icons.css",
       "SourceId": "TestBlazorApp1",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\wwwroot\\",
+      "ContentRoot": "E:\\Satish\\GitHubRepo_My\\TestBlazorApp1\\wwwroot\\",
       "BasePath": "_content/TestBlazorApp1",
       "RelativePath": "bootstrap/bootstrap-icons#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -143,10 +143,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap-icons.css"
     },
     {
-      "Identity": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\wwwroot\\favicon.png",
+      "Identity": "E:\\Satish\\GitHubRepo_My\\TestBlazorApp1\\wwwroot\\favicon.png",
       "SourceId": "TestBlazorApp1",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\wwwroot\\",
+      "ContentRoot": "E:\\Satish\\GitHubRepo_My\\TestBlazorApp1\\wwwroot\\",
       "BasePath": "_content/TestBlazorApp1",
       "RelativePath": "favicon#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -167,7 +167,7 @@
   "Endpoints": [
     {
       "Route": "app.4dy3f5pegs.css",
-      "AssetFile": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\wwwroot\\app.css",
+      "AssetFile": "E:\\Satish\\GitHubRepo_My\\TestBlazorApp1\\wwwroot\\app.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -212,7 +212,7 @@
     },
     {
       "Route": "app.css",
-      "AssetFile": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\wwwroot\\app.css",
+      "AssetFile": "E:\\Satish\\GitHubRepo_My\\TestBlazorApp1\\wwwroot\\app.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -249,7 +249,7 @@
     },
     {
       "Route": "bootstrap/bootstrap.min.bpk8xqwxhs.css",
-      "AssetFile": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "AssetFile": "E:\\Satish\\GitHubRepo_My\\TestBlazorApp1\\wwwroot\\bootstrap\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -294,7 +294,7 @@
     },
     {
       "Route": "bootstrap/bootstrap.min.css",
-      "AssetFile": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "AssetFile": "E:\\Satish\\GitHubRepo_My\\TestBlazorApp1\\wwwroot\\bootstrap\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -331,7 +331,7 @@
     },
     {
       "Route": "bootstrap/bootstrap.min.css.8inm30yfxf.map",
-      "AssetFile": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "AssetFile": "E:\\Satish\\GitHubRepo_My\\TestBlazorApp1\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -376,7 +376,7 @@
     },
     {
       "Route": "bootstrap/bootstrap.min.css.map",
-      "AssetFile": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "AssetFile": "E:\\Satish\\GitHubRepo_My\\TestBlazorApp1\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -413,7 +413,7 @@
     },
     {
       "Route": "bootstrap/bootstrap-icons.css",
-      "AssetFile": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\wwwroot\\bootstrap\\bootstrap-icons.css",
+      "AssetFile": "E:\\Satish\\GitHubRepo_My\\TestBlazorApp1\\wwwroot\\bootstrap\\bootstrap-icons.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -450,7 +450,7 @@
     },
     {
       "Route": "bootstrap/bootstrap-icons.k5i52on6ev.css",
-      "AssetFile": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\wwwroot\\bootstrap\\bootstrap-icons.css",
+      "AssetFile": "E:\\Satish\\GitHubRepo_My\\TestBlazorApp1\\wwwroot\\bootstrap\\bootstrap-icons.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -495,7 +495,7 @@
     },
     {
       "Route": "favicon.ifv42okdf2.png",
-      "AssetFile": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\wwwroot\\favicon.png",
+      "AssetFile": "E:\\Satish\\GitHubRepo_My\\TestBlazorApp1\\wwwroot\\favicon.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -540,7 +540,7 @@
     },
     {
       "Route": "favicon.png",
-      "AssetFile": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\wwwroot\\favicon.png",
+      "AssetFile": "E:\\Satish\\GitHubRepo_My\\TestBlazorApp1\\wwwroot\\favicon.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -577,7 +577,7 @@
     },
     {
       "Route": "TestBlazorApp1.bundle.scp.css",
-      "AssetFile": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TestBlazorApp1.bundle.scp.css",
+      "AssetFile": "E:\\Satish\\GitHubRepo_My\\TestBlazorApp1\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TestBlazorApp1.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -614,7 +614,7 @@
     },
     {
       "Route": "TestBlazorApp1.cw9u596927.bundle.scp.css",
-      "AssetFile": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TestBlazorApp1.bundle.scp.css",
+      "AssetFile": "E:\\Satish\\GitHubRepo_My\\TestBlazorApp1\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TestBlazorApp1.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -659,7 +659,7 @@
     },
     {
       "Route": "TestBlazorApp1.cw9u596927.styles.css",
-      "AssetFile": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TestBlazorApp1.styles.css",
+      "AssetFile": "E:\\Satish\\GitHubRepo_My\\TestBlazorApp1\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TestBlazorApp1.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -704,7 +704,7 @@
     },
     {
       "Route": "TestBlazorApp1.styles.css",
-      "AssetFile": "E:\\Satish\\Test\\TestBlazorApp1\\TestBlazorApp1\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TestBlazorApp1.styles.css",
+      "AssetFile": "E:\\Satish\\GitHubRepo_My\\TestBlazorApp1\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TestBlazorApp1.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
