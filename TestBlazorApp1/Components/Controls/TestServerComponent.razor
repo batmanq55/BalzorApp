@@ -1,5 +1,7 @@
 ﻿@inject NavigationManager NavigationManager
 
+
+
 <h3>TestServerComponent</h3>
 
 @* <TestingComponent></TestingComponent> *@
@@ -9,21 +11,30 @@
         @foreach (var city in cities)
         {
             <div class="col">
-                <button type="button" class="btn btn-primary">@city</button>
+                <button type="button" class="btn btn-primary" @onclick="@(()=>{ SelectCity(city); })">@city</button>
             </div>
         }
     </div>
 </div>
+<br />
+<div class="input-group mb-3">
+    <input placeholder="Search Servr" type="text" class="form-control" @onchange="eventChangeHandler" />
+    <button class="btn btn-outline-secondary" type="button" id="button-search" @onclick="HandleChangeServer">Search</button>
+</div>
+@filterSearch
 
-<ServerInterActiveComp></ServerInterActiveComp>
-
-<p>
-    <ModelAppendToServerComponent></ModelAppendToServerComponent>
-</p>
+<p>twoeay binding</p>
+<div class="input-group mb-3">
+    <input placeholder="Search Servr" type="text" class="form-control" @bind-value="filterSearch" @bind-value:event="oninput" />
+    <button class="btn btn-outline-secondary" type="button" id="button-search" @onclick="HandleChangeServer">Search</button>
+</div>
+@filterSearch
+<br />
 <ul>
-    @foreach (var server in servers)
-    {
-        <li>
+    @* @foreach (var server in servers)
+    { *@
+    <Virtualize Items="this.servers" Context="server">
+        <li @key="server.ServerId">
             <span data-name="@server.Name" data-status="@(server.IsOnline?"Online":"Offline")" style="@($"color:{(server.IsOnline?"green":"red")}")">
                 @server.Name is @server.City that is
                 @(server.IsOnline ? "Online" : "Offline")
@@ -32,25 +43,66 @@
             &nbsp;
             <EditForm Model="server"
                       FormName="@($"form-server-{server.ServerId}")"
-                      OnValidSubmit="@(() => {DeleteServer(server.ServerId);})">
+                      OnValidSubmit="@(() => {DeleteServer(server.ServerId,server.City);})">
                 <button type="submit" class="btn btn-danger">Delete</button>
             </EditForm>
             @* <button type="button" class="btn btn-primary" @onclick="@(() => {DeleteServer(server.ServerId);})">Delete</button> *@
         </li>
-    }
+    </Virtualize>
+    @* } *@
 </ul>
 <p>
     <a href="/Server/Add" class="btn btn-primary"> Add Server</a>
 </p>
+
+<br />
+<ServerInterActiveComp @rendermode="InteractiveServer"></ServerInterActiveComp>
+
+<p>
+    <ModelAppendToServerComponent></ModelAppendToServerComponent>
+</p>
 @code {
-    public List<ServerDetails> servers = ServerDetailssRepository.GetServerDetailssByCity("Toronto");
+    public List<ServerDetails> servers;
     public List<string> cities = CityRepository.GetCities();
-    private void DeleteServer(int serverId)
+    private string _filterSearch = string.Empty;
+    private string filterSearch
+    {
+        get => _filterSearch;
+        set
+        {
+            _filterSearch = value;
+
+            this.servers = ServerDetailssRepository.SearchServerDetailss(_filterSearch);
+        }
+    }
+    protected override void OnParametersSet()
+    {
+        servers ??= ServerDetailssRepository.GetServerDetailssByCity("Toronto");
+    }
+    private void DeleteServer(int serverId, string cityName)
     {
         if (serverId > 0)
         {
             ServerDetailssRepository.DeleteServerDetails(serverId);
+            SelectCity(cityName);
             NavigationManager.Refresh();
         }
+    }
+    private void SelectCity(string cityName)
+    {
+        this.servers = ServerDetailssRepository.GetServerDetailssByCity(cityName);
+        if (cityName == "Halifax")
+            for (int i = 16; i < 100; i++)
+                servers.Add(new ServerDetails() { ServerId = i, Name = $"Server{i}", City = cityName });
+    }
+
+    private void eventChangeHandler(ChangeEventArgs args)
+    {
+        filterSearch = args.Value?.ToString() ?? string.Empty;
+    }
+
+    private void HandleChangeServer()
+    {
+        this.servers = ServerDetailssRepository.SearchServerDetailss(filterSearch);
     }
 }
